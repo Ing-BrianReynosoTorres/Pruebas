@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pruebas.MainActivity">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Grupo de opciones -->
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usar Radio"/>
+
+            <RadioButton
+                android:id="@+id/rb_diametro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usar Diámetro"/>
+
+            <RadioButton
+                android:id="@+id/rb_circunferencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usar Circunferencia"/>
+        </RadioGroup>
+
+        <!-- Entrada para radio -->
+        <EditText
+            android:id="@+id/et_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introduce el radio"
+            android:inputType="numberDecimal"
+            android:visibility="gone"/> <!-- Se oculta inicialmente -->
+
+        <!-- Entrada para diámetro -->
+        <EditText
+            android:id="@+id/et_diametro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introduce el diámetro"
+            android:inputType="numberDecimal"
+            android:visibility="gone"/>
+
+        <!-- Entrada para circunferencia -->
+        <EditText
+            android:id="@+id/et_circunferencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introduce la circunferencia"
+            android:inputType="numberDecimal"
+            android:visibility="gone"/>
+
+        <!-- Botón para calcular -->
+        <Button
+            android:id="@+id/btn_calcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calcular"/>
+
+        <!-- Resultado -->
+        <TextView
+            android:id="@+id/tv_resultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado aquí"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
